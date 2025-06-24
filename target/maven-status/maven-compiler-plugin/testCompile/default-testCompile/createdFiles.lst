@@ -1,0 +1,10 @@
+api/payloads/User.class
+api/endpoints/Routes.class
+api/tests/DDTests.class
+api/utiities/ExtentReportmanger.class
+api/tests/UserTest2.class
+api/utiities/DataProvidors.class
+api/utiities/XLUtilities.class
+api/tests/UserTest.class
+api/endpoints/EndPoints_propertiesFile.class
+api/endpoints/UserEndPoints.class
