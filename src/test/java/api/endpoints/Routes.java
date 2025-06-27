@@ -7,6 +7,12 @@ package api.endpoints;
  Get User(GET) : https://petstore.swagger.io/v2/user/{username}
  Update User(PUT) : https://petstore.swagger.io/v2/user/{username}
  Delete User (DELETE) : https://petstore.swagger.io/v2/user/{username}
+ 
+ 
+ Get Inventory(get) : https://petstore.swagger.io/v2/store/inventory
+ create order(post) : https://petstore.swagger.io/v2/store/order
+ get order details (get) : https://petstore.swagger.io/v2/store/order/{orderid}
+ Delete order(delete)  : https://petstore.swagger.io/v2/store/order/{orderid}
  */
 
 
@@ -25,7 +31,11 @@ public class Routes {
 	
 	//STORE MODEL
 	
-	   //here create store model url
+	   public static String get_store_inventory_url= base_url+"/store/inventory";
+	   public static String post_order_url= base_url+"/store/order";
+	   public static String get_order_url=base_url+"/store/order/{orderid}";
+	   public static String delete_order_url= base_url+"/store/order/{orderid}";
+	   
 	
 	//PET MODEL
 	

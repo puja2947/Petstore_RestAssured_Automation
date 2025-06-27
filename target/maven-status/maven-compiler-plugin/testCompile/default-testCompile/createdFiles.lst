@@ -4,7 +4,12 @@ api/tests/DDTests.class
 api/utiities/ExtentReportmanger.class
 api/tests/UserTest2.class
 api/utiities/DataProvidors.class
+api/endpoints/Store_Endpoints.class
 api/utiities/XLUtilities.class
 api/tests/UserTest.class
+api/endpoints/PetEndPoints.class
 api/endpoints/EndPoints_propertiesFile.class
+api/payloads/Store.class
+api/tests/PetTests.class
+api/tests/StoreTest.class
 api/endpoints/UserEndPoints.class
