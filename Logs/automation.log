@@ -22,3 +22,64 @@
 00:32:00.596 [main] INFO  api.tests.StoreTest - ************Above is the order details***********
 00:32:00.600 [main] INFO  api.tests.StoreTest - ************Deleting the order***********
 00:32:02.028 [main] INFO  api.tests.StoreTest - ************Deleted the order***********
+00:52:29.790 [main] INFO  api.tests.StoreTest - ************Getting inventory details***********
+00:52:32.018 [main] INFO  api.tests.StoreTest - **************above is the inventory details****************
+00:52:32.023 [main] INFO  api.tests.StoreTest - ************Placing new order***********
+00:52:33.822 [main] INFO  api.tests.StoreTest - ************New Order placed***********
+00:52:33.823 [main] INFO  api.tests.StoreTest - ************Getting order details***********
+00:52:35.171 [main] INFO  api.tests.StoreTest - ************Deleting the order***********
+00:53:30.951 [main] INFO  api.tests.StoreTest - ************Getting inventory details***********
+00:53:34.920 [main] INFO  api.tests.StoreTest - **************above is the inventory details****************
+00:53:34.948 [main] INFO  api.tests.StoreTest - ************Placing new order***********
+00:53:37.366 [main] INFO  api.tests.StoreTest - ************New Order placed***********
+00:53:37.379 [main] INFO  api.tests.StoreTest - ************Getting order details***********
+00:53:38.939 [main] INFO  api.tests.StoreTest - ************Above is the order details***********
+00:53:38.954 [main] INFO  api.tests.StoreTest - ************Deleting the order***********
+00:53:40.580 [main] INFO  api.tests.StoreTest - ************Deleted the order***********
+00:57:56.527 [main] INFO  api.tests.StoreTest - ************Getting inventory details***********
+00:57:58.776 [main] INFO  api.tests.StoreTest - **************above is the inventory details****************
+00:57:58.781 [main] INFO  api.tests.StoreTest - ************Placing new order***********
+00:58:00.571 [main] INFO  api.tests.StoreTest - ************New Order placed***********
+00:58:00.572 [main] INFO  api.tests.StoreTest - ************Getting order details***********
+00:58:01.987 [main] INFO  api.tests.StoreTest - ************Above is the order details***********
+00:58:01.991 [main] INFO  api.tests.StoreTest - ************Deleting the order***********
+00:58:03.421 [main] INFO  api.tests.StoreTest - ************Deleted the order***********
+09:50:10.543 [main] INFO  api.tests.PetTests - ***************Creating New Pet**************
+09:50:16.427 [main] INFO  api.tests.PetTests - *************New Pet created****************
+09:50:16.454 [main] INFO  api.tests.PetTests - *************Getting details of new pet ****************
+09:50:17.978 [main] INFO  api.tests.PetTests - *************Updating pet details ****************
+09:50:19.272 [main] INFO  api.tests.PetTests - *************Updated pet details ****************
+09:50:19.285 [main] INFO  api.tests.PetTests - ************* Deleting the pet info****************
+09:50:20.807 [main] INFO  api.tests.PetTests - *************Deleted pet ****************
+09:50:40.429 [main] INFO  api.tests.PetTests - ***************Creating New Pet**************
+09:50:45.588 [main] INFO  api.tests.PetTests - *************New Pet created****************
+09:50:45.611 [main] INFO  api.tests.PetTests - *************Getting details of new pet ****************
+09:50:47.241 [main] INFO  api.tests.PetTests - ************* Got details of new pet****************
+09:50:47.258 [main] INFO  api.tests.PetTests - *************Updating pet details ****************
+09:50:48.766 [main] INFO  api.tests.PetTests - *************Updated pet details ****************
+09:50:48.776 [main] INFO  api.tests.PetTests - ************* Deleting the pet info****************
+09:51:30.778 [main] INFO  api.tests.PetTests - ***************Creating New Pet**************
+09:51:37.681 [main] INFO  api.tests.PetTests - *************Getting details of new pet ****************
+09:51:38.899 [main] INFO  api.tests.PetTests - *************Updating pet details ****************
+09:51:40.080 [main] INFO  api.tests.PetTests - ************* Deleting the pet info****************
+09:54:59.404 [main] INFO  api.tests.PetTests - ***************Creating New Pet**************
+09:55:07.247 [main] INFO  api.tests.PetTests - *************New Pet created****************
+09:55:07.272 [main] INFO  api.tests.PetTests - *************Getting details of new pet ****************
+09:55:08.953 [main] INFO  api.tests.PetTests - *************Updating pet details ****************
+09:55:12.121 [main] INFO  api.tests.PetTests - *************Updated pet details ****************
+09:55:12.133 [main] INFO  api.tests.PetTests - ************* Deleting the pet info****************
+10:01:43.683 [main] INFO  api.tests.PetTests - ***************Creating New Pet**************
+10:01:46.111 [main] INFO  api.tests.PetTests - *************New Pet created****************
+10:01:46.115 [main] INFO  api.tests.PetTests - *************Getting details of new pet ****************
+10:01:47.501 [main] INFO  api.tests.PetTests - ************* Got details of new pet****************
+10:01:47.504 [main] INFO  api.tests.PetTests - *************Updating pet details ****************
+10:01:50.672 [main] INFO  api.tests.PetTests - *************Updated pet details ****************
+10:01:50.675 [main] INFO  api.tests.PetTests - ************* Deleting the pet info****************
+10:01:52.034 [main] INFO  api.tests.PetTests - *************Deleted pet ****************
+10:02:47.010 [main] INFO  api.tests.PetTests - ***************Creating New Pet**************
+10:02:55.263 [main] INFO  api.tests.PetTests - *************New Pet created****************
+10:02:55.284 [main] INFO  api.tests.PetTests - *************Getting details of new pet ****************
+10:02:57.006 [main] INFO  api.tests.PetTests - *************Updating pet details ****************
+10:02:58.571 [main] INFO  api.tests.PetTests - *************Updated pet details ****************
+10:02:58.578 [main] INFO  api.tests.PetTests - ************* Deleting the pet info****************
+10:03:00.210 [main] INFO  api.tests.PetTests - *************Deleted pet ****************

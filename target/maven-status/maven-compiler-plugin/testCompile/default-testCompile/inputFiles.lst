@@ -3,7 +3,10 @@
 /Users/amriteshkumar/eclipse-workspace/RestAssured-training/PetstoreAutomation/src/test/java/api/endpoints/Routes.java
 /Users/amriteshkumar/eclipse-workspace/RestAssured-training/PetstoreAutomation/src/test/java/api/endpoints/Store_Endpoints.java
 /Users/amriteshkumar/eclipse-workspace/RestAssured-training/PetstoreAutomation/src/test/java/api/endpoints/UserEndPoints.java
+/Users/amriteshkumar/eclipse-workspace/RestAssured-training/PetstoreAutomation/src/test/java/api/payloads/Category_Pet.java
+/Users/amriteshkumar/eclipse-workspace/RestAssured-training/PetstoreAutomation/src/test/java/api/payloads/Pet.java
 /Users/amriteshkumar/eclipse-workspace/RestAssured-training/PetstoreAutomation/src/test/java/api/payloads/Store.java
+/Users/amriteshkumar/eclipse-workspace/RestAssured-training/PetstoreAutomation/src/test/java/api/payloads/Tags_Pet.java
 /Users/amriteshkumar/eclipse-workspace/RestAssured-training/PetstoreAutomation/src/test/java/api/payloads/User.java
 /Users/amriteshkumar/eclipse-workspace/RestAssured-training/PetstoreAutomation/src/test/java/api/tests/DDTests.java
 /Users/amriteshkumar/eclipse-workspace/RestAssured-training/PetstoreAutomation/src/test/java/api/tests/PetTests.java

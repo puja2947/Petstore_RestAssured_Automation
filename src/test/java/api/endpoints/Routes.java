@@ -39,5 +39,8 @@ public class Routes {
 	
 	//PET MODEL
 	
-        // here create pet module url
+	   public static String create_pet_url= base_url+"/pet";
+		public static String get_pet_url= base_url+"/pet/{id}";
+		public static String update_pet_url= base_url+"/pet";
+		public static String delete_pet_url= base_url+"/pet/{id}";
 }

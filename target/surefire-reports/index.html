@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-PetSuite" class="navigator-link">
-              <span class="suite-name border-passed">PetSuite</span>
+              <span class="suite-name border-failed">PetSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-PetSuite" class="hide-methods failed suite-PetSuite"> (hide)</a> <!-- hide-methods failed suite-PetSuite -->
+                      <a href="#" panel-name="suite-PetSuite" class="show-methods failed suite-PetSuite"> (show)</a> <!-- show-methods failed suite-PetSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-PetSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PetSuite" title="api.tests.PetTests" class="method navigator-link" hash-for-method="testGetPetDetails">testGetPetDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-PetSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +117,17 @@
                     <div class="method-list-content passed suite-PetSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-PetSuite" title="api.tests.StoreTest" class="method navigator-link" hash-for-method="testDeleteOrder">testDeleteOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-PetSuite" title="api.tests.PetTests" class="method navigator-link" hash-for-method="testCreatePet">testCreatePet</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-PetSuite" title="api.tests.StoreTest" class="method navigator-link" hash-for-method="testGetOrderInfo">testGetOrderInfo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-PetSuite" title="api.tests.PetTests" class="method navigator-link" hash-for-method="testDeletePet">testDeletePet</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-PetSuite" title="api.tests.StoreTest" class="method navigator-link" hash-for-method="testGetStoreInventory">testGetStoreInventory</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-PetSuite" title="api.tests.StoreTest" class="method navigator-link" hash-for-method="testPlaceOrder">testPlaceOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-PetSuite" title="api.tests.PetTests" class="method navigator-link" hash-for-method="testUpdatePetDetails">testUpdatePetDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-PetSuite -->
@@ -133,38 +142,69 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-PetSuite" class="panel PetSuite">
-          <div class="suite-PetSuite-class-passed">
+          <div class="suite-PetSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">api.tests.StoreTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">api.tests.PetTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testDeleteOrder">
-                  </a> <!-- testDeleteOrder -->
-                  <span class="method-name">testDeleteOrder</span>
+                  <a name="testGetPetDetails">
+                  </a> <!-- testGetPetDetails -->
+                  <span class="method-name">testGetPetDetails</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at api.tests.PetTests.testGetPetDetails(PetTests.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PetSuite-class-failed -->
+          <div class="suite-PetSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.tests.PetTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreatePet">
+                  </a> <!-- testCreatePet -->
+                  <span class="method-name">testCreatePet</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testGetOrderInfo">
-                  </a> <!-- testGetOrderInfo -->
-                  <span class="method-name">testGetOrderInfo</span>
+                  <a name="testDeletePet">
+                  </a> <!-- testDeletePet -->
+                  <span class="method-name">testDeletePet</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testGetStoreInventory">
-                  </a> <!-- testGetStoreInventory -->
-                  <span class="method-name">testGetStoreInventory</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPlaceOrder">
-                  </a> <!-- testPlaceOrder -->
-                  <span class="method-name">testPlaceOrder</span>
+                  <a name="testUpdatePetDetails">
+                  </a> <!-- testUpdatePetDetails -->
+                  <span class="method-name">testUpdatePetDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,7 +224,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;PetTest&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;api.tests.StoreTest&quot;/&gt;
+      &lt;class name=&quot;api.tests.PetTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- PetTest --&gt;
 &lt;/suite&gt; &lt;!-- PetSuite --&gt;
@@ -226,26 +266,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testGetStoreInventory')
-data.setCell(0, 2, 'api.tests.StoreTest')
-data.setCell(0, 3, 2179);
+data.setCell(0, 1, 'testCreatePet')
+data.setCell(0, 2, 'api.tests.PetTests')
+data.setCell(0, 3, 8262);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testPlaceOrder')
-data.setCell(1, 2, 'api.tests.StoreTest')
-data.setCell(1, 3, 1726);
+data.setCell(1, 1, 'testGetPetDetails')
+data.setCell(1, 2, 'api.tests.PetTests')
+data.setCell(1, 3, 1709);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testGetOrderInfo')
-data.setCell(2, 2, 'api.tests.StoreTest')
-data.setCell(2, 3, 1568);
+data.setCell(2, 1, 'testDeletePet')
+data.setCell(2, 2, 'api.tests.PetTests')
+data.setCell(2, 3, 1636);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testDeleteOrder')
-data.setCell(3, 2, 'api.tests.StoreTest')
-data.setCell(3, 3, 1429);
+data.setCell(3, 1, 'testUpdatePetDetails')
+data.setCell(3, 2, 'api.tests.PetTests')
+data.setCell(3, 3, 1566);
 window.suiteTableData['PetSuite']= { tableData: data, tableDiv: 'times-div-PetSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-PetSuite">
               </div> <!-- times-div-PetSuite -->
             </div> <!-- times-div -->
@@ -271,27 +311,33 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">api.tests.StoreTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">api.tests.PetTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpdata</span>
+                <span class="method-name">setUpData</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testGetStoreInventory</span>
-                <span class="method-start">295 ms</span>
+                <span class="method-name">testCreatePet</span>
+                <span class="method-start">810 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testPlaceOrder</span>
-                <span class="method-start">2478 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetPetDetails</span>
+                <span class="method-start">9091 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testGetOrderInfo</span>
-                <span class="method-start">4204 ms</span>
+                <span class="method-name">testUpdatePetDetails</span>
+                <span class="method-start">10813 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testDeleteOrder</span>
-                <span class="method-start">5774 ms</span>
+                <span class="method-name">testDeletePet</span>
+                <span class="method-start">12383 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">14023 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -11,7 +11,8 @@
    <!--   <class name="api.tests.DDTests"/>-->
      <!-- <class name="api.tests.UserTest"/>-->
        <!-- <class name="api.tests.UserTest2"/> -->
-       <class name="api.tests.StoreTest"/>
+      <!-- <class name="api.tests.StoreTest"/>  -->
+       <class name="api.tests.PetTests" />
     </classes>
   </test> <!-- PetTest -->
 </suite> <!-- PetSuite -->
